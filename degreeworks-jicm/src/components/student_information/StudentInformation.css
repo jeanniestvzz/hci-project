@@ -26,3 +26,9 @@
     color: #E0D1A5;
     background-color: #005A41;
 }
+
+.header-degree-progress {
+    color: #005A41;
+    font-weight: bold;
+    font-size: 20px;
+}

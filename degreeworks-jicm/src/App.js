@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header, StudentInformation } from './components'
+import { Header, StudentInformation, DegreeProgressBar } from './components'
 import './App.css';
 
 function App() {
@@ -7,6 +7,7 @@ function App() {
     <div className="App">
       <Header/>
       <StudentInformation/>
+      <DegreeProgressBar progress='32.5'/>
     </div>
   );
 }

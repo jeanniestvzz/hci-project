@@ -24,6 +24,9 @@ function StudentInformation () {
                     <th className="student-information-value">3.66</th>
                 </tr>
             </table>
+            <div>
+                <header className="header-degree-progress">Degree Progress</header>
+            </div>
         </div>
     )
 }
