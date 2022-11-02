@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header, StudentInformation, DegreeProgressBar } from './components'
+import { Header, StudentInformation, DegreeProgressBar, Flowchart } from './components'
 import './App.css';
 
 function App() {
@@ -8,6 +8,7 @@ function App() {
       <Header/>
       <StudentInformation/>
       <DegreeProgressBar progress='32.5'/>
+      <Flowchart/>
     </div>
   );
 }
