@@ -1,11 +1,11 @@
+import React from 'react';
+import { Header } from './components'
 import './App.css';
 
 function App() {
   return (
-    <div>
-      <header>
-        Degree Actually Works
-      </header>
+    <div className="App">
+      <Header/>
     </div>
   );
 }
