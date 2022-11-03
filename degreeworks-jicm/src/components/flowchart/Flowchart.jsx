@@ -1,20 +1,12 @@
 import React from 'react';
 import './Flowchart.css';
+import OverviewFlow from './graph/App';
 
 function Flowchart () {
     return (
         <section className="background">
             <section>
-                HERE is this section
-            </section>
-            <section>
-                THAT I
-            </section>
-            <section>
-                created for the 
-            </section>
-            <section>
-                FLOWCHART lol
+                <OverviewFlow/>
             </section>
         </section>
     )
