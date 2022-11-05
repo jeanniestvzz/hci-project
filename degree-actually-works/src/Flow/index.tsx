@@ -34,7 +34,8 @@ const initialNodes: Node[] = [
     data: { label: 'ENC 1101 (3 hrs)', desc: 'Composition I', grade: '[A]' },
     position: { x: 10, y: 30 },
     style: { backgroundColor: 'lightgreen' },
-    parentNode: 'english'
+    parentNode: 'english',
+    extent: 'parent'
   },
   {
     id: 'enc1102',
@@ -42,7 +43,8 @@ const initialNodes: Node[] = [
     data: { label: 'ENC 1102 (3 hrs)', desc: 'Composition II', grade: '[A]' },
     position: { x: 180, y: 30 },
     style: { backgroundColor: 'lightgreen' },
-    parentNode: 'english'
+    parentNode: 'english',
+    extent: 'parent'
   },
   {
     id: 'eng3000',
