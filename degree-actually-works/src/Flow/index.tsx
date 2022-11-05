@@ -25,14 +25,15 @@ const initialNodes: Node[] = [
     data: { label: 'English (6 hrs)' },
     position: { x: 100, y: 100 }, 
     className: 'light', 
-    style: { backgroundColor: 'rgba(255, 0, 0, 0.2)', width: 120, height: 220 }
+    style: { width: 175, height: 220 },
+    connectable: false
   },
   {
     id: 'enc1101',
     type: 'custom',
     data: { label: 'ENC 1101 (3 hrs)', desc: 'Composition I', grade: '[A]' },
     position: { x: 10, y: 50 },
-    style: { width: 100, height: 60, fontSize: 10 }, 
+    style: { backgroundColor: 'lightgreen' },
     parentNode: 'english'
   },
   {
@@ -40,7 +41,7 @@ const initialNodes: Node[] = [
     type: 'custom',
     data: { label: 'ENC 1102 (3 hrs)', desc: 'Composition II', grade: '[A]' },
     position: { x: 10, y: 140 },
-    style: { width: 100, height: 60, fontSize: 10 }, 
+    style: { backgroundColor: 'lightgreen' },
     parentNode: 'english'
   },
   {
@@ -48,6 +49,7 @@ const initialNodes: Node[] = [
     type: 'custom',
     data: { label: 'ENG 3000/300L (4 hrs)', desc: 'Foundations of Engineering', grade: '[A]' },
     position: { x: 250, y: 5 },
+    style: { backgroundColor: 'lightgreen' },
   },
   {
     id: '4',
