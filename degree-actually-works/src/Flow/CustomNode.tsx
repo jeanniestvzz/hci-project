@@ -1,11 +1,7 @@
 import { memo, FC, CSSProperties } from 'react';
 import { Handle, Position, NodeProps } from 'reactflow';
 
-const sourceHandleStyleA: CSSProperties = { left: 50 };
-const sourceHandleStyleB: CSSProperties = {
-  right: 50,
-  left: 'auto',
-};
+const sourceHandleStyleA: CSSProperties = {  };
 
 const CustomNode: FC<NodeProps> = ({ data, xPos, yPos }) => {
   return (
@@ -28,12 +24,6 @@ const CustomNode: FC<NodeProps> = ({ data, xPos, yPos }) => {
         position={Position.Bottom}
         id="a"
         style={sourceHandleStyleA}
-      />
-      <Handle
-        type="source"
-        position={Position.Bottom}
-        id="b"
-        style={sourceHandleStyleB}
       />
     </>
   );
