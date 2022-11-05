@@ -17,6 +17,9 @@ const CustomNode: FC<NodeProps> = ({ data, xPos, yPos }) => {
         <div>
           {data.grade}
         </div>
+        <div>
+          Position:{' '}: {xPos.toFixed(0)},{yPos.toFixed(0)}
+        </div>
       </div>
 
       <Handle
