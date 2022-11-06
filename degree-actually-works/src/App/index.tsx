@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <Header />
       <StudentInformation />
-      <DegreeProgressBar progress='32.5' />
+      <DegreeProgressBar progress='21.66' />
       <Flow />
     </div>
   );

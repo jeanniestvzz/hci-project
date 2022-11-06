@@ -19,7 +19,7 @@ function StudentInformation () {
                 </tr>
                 <tr>
                     <th className="student-information-attribute">USF Hours</th>
-                    <th className="student-information-value">25</th>
+                    <th className="student-information-value">26</th>
                     <th className="student-information-attribute">USF GPA</th>
                     <th className="student-information-value">3.66</th>
                 </tr>
