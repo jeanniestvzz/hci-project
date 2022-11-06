@@ -6,7 +6,11 @@ const sourceHandleStyleA: CSSProperties = {  };
 const CustomNode: FC<NodeProps> = ({ data, xPos, yPos }) => {
   return (
     <>
-      <Handle type="target" position={Position.Top} />
+      <Handle 
+        type="target" 
+        position={Position.Top} 
+      />
+
       <div>
         <div>
           {data.label}
@@ -16,9 +20,6 @@ const CustomNode: FC<NodeProps> = ({ data, xPos, yPos }) => {
         </div>
         <div>
           {data.grade}
-        </div>
-        <div>
-          {xPos.toFixed(0)},    {yPos.toFixed(0)}
         </div>
       </div>
 

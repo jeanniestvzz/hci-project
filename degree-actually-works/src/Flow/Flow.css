@@ -5,9 +5,10 @@
 
 .react-flow__node-custom {
   border: 1px solid #555;
-  padding: 10px;
+  padding: 8px;
   width: 150px;
   height: 60px;
-  font-Size: 10px;
+  font-Size: 11px;
   border-radius: 5px;
+  text-align: center;
 }
