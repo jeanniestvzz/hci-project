@@ -22,6 +22,10 @@ const nodeTypes = {
   custom: CustomNode,
 };
 
+const internshipStr = "An industry internship is recommended for the third summer. Credit can be earned as CIS 4940 Industry Internship. See the Department Advisor for more information.";
+
+const notesStr = "1) Unless otherwise stated, the minimum acceptable grade in all BSCS required math, science, and engineering courses is a C or higher (C- is insufficient). The minimum acceptable grade in specialization courses is a C-, except as stated in the progression and continuation requirements in the catalog. 2) A student may substitute a second 'Physical Science' course for the required 'Life Science' course. 3) COP 4530 is the minimum prereq for most software electives. CDA 3201 with lab is the minimum prereq for most hardware electives. COP 4530 and COT 3100 are the minimum prereqs for theory electives. 4) The maximum number of credit hours for CIS 4900, CIS 4915, and CIS 4940 in any combination is 6 credit hours.";
+
 const initialNodes: Node[] = [
   {
     id: 'english',
@@ -382,6 +386,69 @@ const initialNodes: Node[] = [
     position: { x: 180, y: 30 },
     style: { fontSize: '14px' },
     parentNode: 'software',
+    extent: 'parent',
+    connectable: false,
+  },
+  {
+    id: 'internship',
+    type: 'custom',
+    data: { label: 'Industry Internship', desc: internshipStr },
+    position: { x: 550, y: 715 }, 
+    style: { width: 300, height: 110, fontSize: '14px', backgroundColor: 'rgba(0, 0, 0, 0.2)' },
+    connectable: false,
+  },
+  {
+    id: 'notes',
+    type: 'custom',
+    data: { label: 'Notes', desc: notesStr },
+    position: { x: 900, y: 5 }, 
+    style: { width: 300, height: 350, fontSize: '14px', backgroundColor: 'rgba(0, 0, 0, 0.2)' },
+    connectable: false,
+  },
+  {
+    id: 'key',
+    data: { label: 'Key' },
+    position: { x: -480, y: 5 }, 
+    style: { width: 180, height: 350, backgroundColor: 'rgba(0, 0, 0, 0.2)' },
+    connectable: false,
+  },
+  {
+    id: 'key1',
+    type: 'custom',
+    data: { label: 'Completed Courses' },
+    position: { x: 15, y: 50 },
+    style: { fontSize: '14px', backgroundColor: 'rgba(0, 255, 0, 0.6)' },
+    parentNode: 'key',
+    extent: 'parent',
+    connectable: false,
+  },
+  {
+    id: 'key2',
+    type: 'custom',
+    data: { label: 'Courses In Progress' },
+    position: { x: 15, y: 120 },
+    style: { fontSize: '14px', backgroundColor: 'rgba(0, 255, 255, 0.6)' },
+    parentNode: 'key',
+    extent: 'parent',
+    connectable: false,
+  },
+  {
+    id: 'key3',
+    type: 'custom',
+    data: { label: 'Unattempted Courses' },
+    position: { x: 15, y: 190 },
+    style: { fontSize: '14px', backgroundColor: 'rgba(255, 255, 255, 1)' },
+    parentNode: 'key',
+    extent: 'parent',
+    connectable: false,
+  },
+  {
+    id: 'key4',
+    type: 'custom',
+    data: { label: 'Unsatisfactory Courses' },
+    position: { x: 15, y: 260 },
+    style: { fontSize: '14px', backgroundColor: 'rgba(255, 0, 0, 0.6)' },
+    parentNode: 'key',
     extent: 'parent',
     connectable: false,
   },
